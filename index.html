@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Navbar Example</title>
+<style>
+  header {
+    background-color: darkblue;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  img{
+    width: 50px;
+    height: 50px;
+  }
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    transition: color 0.3s ease;
+  }
+  nav a.home:hover {
+    color: gold;
+  }
+  nav a.about:hover {
+    color: gold;
+  }nav a.Contact:hover {
+    color: gold;
+  }
+  nav a.services:hover {
+    color: gold;
+  }
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  .search-container input[type="text"] {
+    padding: 6px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+  }
+  .search-container button {
+    padding: 6px 10px;
+    border: none;
+    background-color: rgb(23, 204, 77);
+    color: rgb(255, 255, 255);
+    
+  }
+  .search-container button:hover {
+    background-color: #ffc609; 
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <img src="pngegg (1).png" alt="">
+    <a href="#" class="home"><u>Home</u></a>
+    <a href="#" class="about"> <u>About</u></a>
+    <a href="#" class="services"><u>Services</u></a>
+    <a href="#" class="Contact"><u>Contact</u></a>
+  </nav>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search..." />
+    <button id="searchBtn">Search</button>
+  </div>
+</header>
+</body>
+</html>
